@@ -1,0 +1,32 @@
+plugins = []
+headers = []
+redirects = []
+
+[dev]
+command = "npm run dev"
+targetPort = 3000
+port = 8888
+
+[functions]
+
+  [functions."*"]
+
+[build]
+publish = "/opt/build/repo/dist/client"
+publishOrigin = "config"
+commandOrigin = "config"
+command = "vite build"
+
+  [build.environment]
+
+  [build.processing]
+
+    [build.processing.css]
+
+    [build.processing.html]
+
+    [build.processing.images]
+
+    [build.processing.js]
+
+  [build.services]
